@@ -6,7 +6,7 @@ const bookSchema = new  mongoose.Schema({
     title:{type: String, required: true},
     desc:{type: String, required: true, unique: true},
     genre: {type: [String]},
-    author: { type: Schema.Types.ObjectId, ref: 'author' },
+    author: {   },
 });
 
 module.exports = mongoose.model("book", bookSchema);
